@@ -10,6 +10,11 @@ map("n", "S", ":w<CR>", opts)
 map("n", "''", ":NvimTreeToggle<CR>", opts)
 map("n", "ll", ":SymbolsOutline<CR>", opts)
 
+
+map("n", "<C-h>", ":bp<CR>", opts)
+map("n", "<C-n>", ":bn<CR>", opts)
+
+
 -- insert a pair of {} and go to the next line
 -- map("i", "<C-{>", "<Esc>A{}<Esc>i<CR><Esc>O", opts)
 map("i", "{", "{}<Esc>i", opts)

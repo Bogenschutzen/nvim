@@ -54,6 +54,9 @@ return packer.startup(function(use)
 	use({ "nvim-lualine/lualine.nvim", commit = "3362b28f917acc37538b1047f187ff1b5645ecdd" })
 
 	use 'simrat39/symbols-outline.nvim'
+
+	use "akinsho/bufferline.nvim"
+	use "moll/vim-bbye"
 	
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" }) -- The completion plugin
