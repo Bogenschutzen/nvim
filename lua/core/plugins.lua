@@ -63,13 +63,20 @@ return packer.startup(function(use)
 	use({ "hrsh7th/cmp-nvim-lsp", commit = "affe808a5c56b71630f17aa7c38e15c59fd648a8" })
 	use({ "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" })
 
+	-- mason
+	use "williamboman/mason.nvim"
+	use "williamboman/mason-lspconfig.nvim"
+	use "neovim/nvim-lspconfig" -- enable LSP
+
+	-- Debugger
+  -- use "ravenxrz/DAPInstall.nvim" -- help us install several debuggers
+  use "mfussenegger/nvim-dap"
+  use "theHamsta/nvim-dap-virtual-text"
+  use "rcarriga/nvim-dap-ui"
+
 	-- snippets
 	use({ "L3MON4D3/LuaSnip", commit = "79b2019c68a2ff5ae4d732d50746c901dd45603a" }) --snippet engine
 	use({ "rafamadriz/friendly-snippets", commit = "d27a83a363e61009278b6598703a763ce9c8e617" }) -- a bunch of snippets to use
-	
-	-- LSP
-	use({ "neovim/nvim-lspconfig", commit = "148c99bd09b44cf3605151a06869f6b4d4c24455" }) -- enable LSP
-	-- use({ "williamboman/nvim-lsp-installer", commit = "e9f13d7acaa60aff91c58b923002228668c8c9e6" }) -- simple to use language server installer
 
 	-- use { "williamboman/mason.nvim" }
 	use "yianwillis/vimcdoc"
@@ -77,15 +84,7 @@ return packer.startup(function(use)
 	-- Treesitter
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
-	-- Debugger
-  use "ravenxrz/DAPInstall.nvim" -- help us install several debuggers
-  use "mfussenegger/nvim-dap"
-  use "theHamsta/nvim-dap-virtual-text"
-  use "rcarriga/nvim-dap-ui"
 
-	-- mason
-	use({ "williamboman/mason.nvim" })
-	use({ "williamboman/mason-lspconfig.nvim" })
 
 
 	--[[

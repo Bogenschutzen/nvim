@@ -13,7 +13,7 @@ if not status_ok then
 	return
 end
 
-require("mason").setup({
+mason.setup({
   ui = {
     icons = {
       package_installed = "✓",
@@ -23,17 +23,15 @@ require("mason").setup({
   },
 })
 
-local servers = { "sumneko_lua", "bashls", "gopls", "clangd" }
-
 mason_config.setup({
   ensure_installed = {
-    "sumneko_lua",
     "bashls",
     "clangd",
     "gopls",
   },
 })
 
+local servers = { "gopls", "clangd" }
 
 for _, server in pairs(servers) do
 	local opts = {

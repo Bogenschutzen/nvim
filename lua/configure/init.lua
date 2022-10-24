@@ -5,5 +5,6 @@ require "configure.symbols"
 require "configure.cmp"
 require "configure.lsp"
 require "configure.nvim-treesitter"
+require "configure.dap"
 
 --require 'lspconfig'.ccls.setup{}
