@@ -7,13 +7,15 @@ map("n", ";", ":", opts)
 map("n", "Q", ":q<CR>", opts)
 map("n", "S", ":w<CR>", opts)
 
+-- nvimtree
 map("n", "''", ":NvimTreeToggle<CR>", opts)
+
+-- symbols
 map("n", "ll", ":SymbolsOutline<CR>", opts)
 
-
+-- buffline
 map("n", "<C-h>", ":bp<CR>", opts)
 map("n", "<C-n>", ":bn<CR>", opts)
-
 
 -- insert a pair of {} and go to the next line
 -- map("i", "<C-{>", "<Esc>A{}<Esc>i<CR><Esc>O", opts)
