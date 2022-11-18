@@ -24,3 +24,10 @@ map("n", "j", "<nop>", opts)
 map("n", "k", "<nop>", opts)
 -- ==================== Insert Mode Cursor Movement ====================
 map("i", "ht", "<Esc>", opts)
+
+
+map("n", "e", "<nop>", opts)
+map("n", "E", "<nop>", opts)
+
+map("n", "w", "e", opts)
+map("v", "w", "e", opts)

@@ -7,5 +7,6 @@ require "configure.lsp"
 require "configure.nvim-treesitter"
 require "configure.dap"
 require "configure.bufferline"
+require "configure.leap"
 
 --require 'lspconfig'.ccls.setup{}
